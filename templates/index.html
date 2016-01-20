@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>收集原力领大奖</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<script src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="../static/css/animate.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/global.css"/>
+		<link rel="stylesheet" type="text/css" href="../static/css/common.css"/>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../static/js/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/zepto.fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/common.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<audio id="music2" src="../static/img/BGM.mp3"  autoplay="autoplay" loop="loop">你的浏览器不支持audio标签。</audio>    
+
+		<div class="wp">
+			<a href="javascript:playPause();"><img src="../static/img/music.png" width="48" height="50" id="music_btn2" border="0"></a>  
+			<div class="container wp-inner">
+				
+				<div class="page page1">
+					<div class="secondPage">
+						<div class="animated second1 " id="secondPage">
+							<img src="../static/img/sec1_03.png" class="second1-1"/>
+							<img src="../static/img/sec1_06.png" class="second1-2"/>
+							<img src="../static/img/sec1_11.png" class="second1-3"/>
+							<img src="../static/img/sec1_19.png" class="second1-5"/>
+						</div>
+					</div>
+				</div>
+				<div class="page page2">
+					<img src="../static/img/1_02.png" class="animated pangzi"/>
+					<img src="../static/img/1_09.png" class="animated keai  bounce"/>
+				</div>
+				<div class="page page3 ">
+					<img src="../static/img/4-1-1.png" class="animated  page2-1"/>
+					<img src="../static/img/4-1-2.png" class="animated flip page2-1-2"/>
+					<img src="../static/img/4-2-1.png" class="animated page2-2"/>
+					<img src="../static/img/4-2-2.png" class="animated  page2-2-2"/>
+					<div class="page2-4">
+
+					</div>
+					<div class="page2-5">
+					</div>
+					<img src="../static/img/4-3.png" class="animated  page2-3"/>
+				</div>
+
+				<div class="page page4 ">
+					
+				</div>
+				<div class="page page5 ">
+					<img src="../static/img/6-2.png" class="animated  page6-2"/>
+					<div class="animated  page6-1"/>
+						<div class="progress"></div>
+					</div>
+					<img src="../static/img/6-btn1.png" class="animated  page6-3"/>
+					<img src="../static/img/6-btn2.png" class="animated  page6-4"/>
+					<div class='page5-bg'></div>
+					<img src="../static/img/6-4.png" class="animated  page6-5"/>
+					<img src="../static/img/7-2.png" class="animated  page6-6"/>
+					
+				</div>
+				<div class="page page6 ">
+					<div class="page6-txt">
+						<div class="page6-contain">
+							<p>你收到了一份原力礼物</p>
+							<input type="text" name="" id="page6-info" value="周大福网络旗舰店优惠券" />
+						</div>						
+					</div>
+					<div class="page6-img">
+						<img src="../static/img/Upan.png"/>
+					</div>
+					<form action="" method="post">
+						<p>姓名/NAME</p>
+						<input type="text" name="" id="" value="" />
+						<p>电话/TEL</p>
+						<input type="text" name="" id="" value="" />
+						<p>地址/ADD</p>
+						<input type="text" name="" id="" value="" />
+						<input type="submit" value="" id="sub"/>
+					</form>
+				</div>			
+		</div>
+		</div>
+		
+				<div class="home">
+					<div class="firstPage">	
+						<div class="animated cartoonGif"></div>
+						<div class="animated cartoon "></div>
+						<div class="animated cartoonBg ">
+							<img src="../static/img/boat1.png" class="boat1  animated"/>
+							<img src="../static/img/boat2.png" class="boat2  animated"/>
+							<img src="../static/img/boat3.png" class="boat3  animated"/>
+							<img src="../static/img/boat4.png" class="boat4  animated"/>
+							<img src="../static/img/boat5.png" class="boat5  animated"/>
+							<img src="../static/img/boat6.png" class="boat6  animated"/>
+							<img src="../static/img/boat7.png" class="boat7  animated"/>
+							<img src="../static/img/boat8.png" class="boat8  animated"/>
+							<img src="../static/img/boat9.png" class="boat9  animated"/>
+							<img src="../static/img/2.png" class="cartoonTitle  animated"/>
+							<img src="../static/img/btn.gif" class="cartoonBtn  animated"/>				
+						</div>																		
+					</div>
+					
+		</div>
+		<script src="../static/js/js.fullpage.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			document.getElementsByClassName('wp-inner')[0].fullpage();
+			var _hmt = _hmt || [];
+			(function() {
+			  var hm = document.createElement("script");
+			  hm.src = "//hm.baidu.com/hm.js?9497d4a818baa09c9a35223ecc9e2559";
+			  var s = document.getElementsByTagName("script")[0]; 
+			  s.parentNode.insertBefore(hm, s);
+			})();
+			
+			var imgUrl = '../static/img/wx-share.png';
+	var lineLink = 'http://#www.jakehu.me/904';
+	var descContent = "亲爱的，只有你才能帮我收集的原力";
+	var shareTitle = '收集原力，免费赢大礼，I need you！';
+	var appid = '';
+	
+	function shareFriend() {
+	    WeixinJSBridge.invoke('sendAppMessage',{
+	        "appid": appid,
+	            "img_url": imgUrl,
+	            "img_width": "200",
+	            "img_height": "200",
+	            "link": lineLink,
+	            "desc": descContent,
+	            "title": shareTitle
+	        }, function(res) {
+	            //_report('send_msg', res.err_msg);
+	        })
+	    }
+	    function shareTimeline() {
+	        WeixinJSBridge.invoke('shareTimeline',{
+	            "img_url": imgUrl,
+	            "img_width": "200",
+	            "img_height": "200",
+	            "link": lineLink,
+	            "desc": descContent,
+	            "title": shareTitle
+	        }, function(res) {
+	              //_report('timeline', res.err_msg);
+	        });
+	    }
+	    function shareWeibo() {
+	        WeixinJSBridge.invoke('shareWeibo',{
+	            "content": descContent,
+	            "url": lineLink,
+	        }, function(res) {
+	            //_report('weibo', res.err_msg);
+	        });
+	    }
+	    // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+	    document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+	        // 发送给好友
+	        WeixinJSBridge.on('menu:share:appmessage', function(argv){
+	            shareFriend();
+	        });
+	        // 分享到朋友圈
+	        WeixinJSBridge.on('menu:share:timeline', function(argv){
+	            shareTimeline();
+	        });
+	        // 分享到微博
+	        WeixinJSBridge.on('menu:share:weibo', function(argv){
+	            shareWeibo();
+	        });
+	    }, false);
+		</script>
+		<input type="hidden" value="{{id}}" id="ownid" />
+	</body>
+</html>
